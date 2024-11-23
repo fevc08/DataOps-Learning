@@ -21,16 +21,72 @@ Commit a Python Script
 Open Visual Studio Code.
 Create a Python file (e.g., hello_dataops.py) with the following code:
 
-<code>print("Hello, DataOps!")</code>
+```python
+print("Hello, DataOps!")
+```
 
 Initialize Git in your local folder:
 
-<code>git init
+```bash
+git init
 git add .
-git commit -m "Initial commit: Hello DataOps script"</code>
+git commit -m "Initial commit: Hello DataOps script"
+```
 
 Push your changes to the GitHub repository:
 
-<code>git branch -M main
+```bash
+git branch -M main
 git remote add origin <your-repo-URL>
-git push -u origin main</code>
+git push -u origin main
+```
+## Day 2: Python Basics for DataOps
+### Theory
+Python is a cornerstone for DataOps due to its simplicity and rich ecosystem. Today, we’ll focus on:
+
+1. File Handling: Reading and writing files are common tasks in data workflows.
+2. Exception Handling: Ensures scripts can handle errors gracefully.
+
+#### Key Concepts:
+
+**Reading Files:**
+
+```python
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)
+```
+
+**Exception Handling:**
+
+```python
+try:
+    with open('nonexistent.txt', 'r') as file:
+        content = file.read()
+except FileNotFoundError:
+    print("File not found.")
+```
+
+### Exercise
+
+1. **Create a .txt File:**
+- Create a file named sample_data.txt in the same directory as your Python script. Add the following content:
+
+    ```txt
+    Name, Age, City
+    John, 30, New York
+    Jane, 25, Los Angeles
+    Mike, 35, Chicago
+    ```
+
+2. Write a Python Script:
+
+- Create a new Python file (e.g., read_file.py).
+
+    Your script should:
+    1. Read the contents of sample_data.txt and print them line by line.
+    2. Handle the case where the file is missing and print a user-friendly error message.
+
+**Bonus Task:**
+If you have time, count the number of lines in the file and print the total.
+
