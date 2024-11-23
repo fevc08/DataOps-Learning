@@ -20,12 +20,17 @@ Commit a Python Script
 
 Open Visual Studio Code.
 Create a Python file (e.g., hello_dataops.py) with the following code:
-`print("Hello, DataOps!")`
+
+<code>print("Hello, DataOps!")</code>
+
 Initialize Git in your local folder:
-`git init
+
+<code>git init
 git add .
-git commit -m "Initial commit: Hello DataOps script"`
+git commit -m "Initial commit: Hello DataOps script"</code>
+
 Push your changes to the GitHub repository:
-`git branch -M main
+
+<code>git branch -M main
 git remote add origin <your-repo-URL>
-git push -u origin main`
+git push -u origin main</code>
