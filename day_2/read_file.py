@@ -3,14 +3,15 @@ try:
         content = file.read() # Read the file
         print(content,'\n')
         
-        # Counting the total lines in the file
+        # Splitting file content into lines and counting non-empty lines
         colist = content.split('\n')
-        counter = 0
-        for i in colist:
-            if i:
-                counter += 1
-            
+        counter = sum(1 for line in colist if line.strip())  # Count non-empty lines
+        
         print('Total Number of lines:', counter)
+
+        # Handling empty file case
+        if counter == 0:
+            print("The file is empty.")
 
 except FileNotFoundError:
     print('The File is missing')
