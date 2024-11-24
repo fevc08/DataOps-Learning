@@ -90,3 +90,75 @@ except FileNotFoundError:
 **Bonus Task:**
 If you have time, count the number of lines in the file and print the total.
 
+## Day 3: Working with Config Files
+### Theory
+In DataOps, configuration files help manage dynamic parameters like database credentials, API keys, or file paths without hardcoding them into scripts. Popular formats include:
+
+1. YAML (Yet Another Markup Language): Readable, widely used in DevOps.
+2. JSON (JavaScript Object Notation): Lightweight, ideal for structured data.
+
+**YAML Example (config.yaml):**
+
+```yaml
+database:
+  host: localhost
+  port: 5432
+  username: admin
+  password: secret
+```
+**JSON Example (config.json):**
+
+```json
+{
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "username": "admin",
+    "password": "secret"
+  }
+}
+```
+**Python Libraries for Parsing Config Files:**
+
+- yaml: For YAML files. Install using pip install pyyaml.
+- json: Built-in library for JSON.
+### Exercise
+1. Create a YAML File:
+
+    Name it config.yaml. Include the following:
+    ```yaml
+    database:
+    host: localhost
+    port: 5432
+    username: admin
+    password: secret```
+2. Write a Python Script:
+
+    Name the file read_config.py.
+
+    Your script should:
+    1. Load and parse the config.yaml file.
+    2. Print each parameter in the database section (e.g., host, port).
+
+**Example Output:**
+
+```yaml
+Database Host: localhost  
+Database Port: 5432  
+Database Username: admin  
+Database Password: secret
+```  
+**Bonus Task:**
+
+Modify the script to check if the configuration file exists before reading. Print an error message if it’s missing.
+
+*Hints*
+
+To load YAML in Python:
+```python
+import yaml
+
+with open('config.yaml', 'r') as file:
+    config = yaml.safe_load(file)
+    print(config['database']['host'])  # Access individual keys
+```
