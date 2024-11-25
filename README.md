@@ -162,3 +162,67 @@ with open('config.yaml', 'r') as file:
     config = yaml.safe_load(file)
     print(config['database']['host'])  # Access individual keys
 ```
+## Day 4: Environment Setup and Virtual Environments
+### Theory
+A virtual environment is an isolated environment for Python projects, allowing you to:
+
+1. Avoid version conflicts between dependencies of different projects.
+2. Maintain a clean global Python installation.
+
+**Key Tools:**
+
+`venv` (built-in): Simple and effective for creating virtual environments.
+
+`pip:` Python’s package installer for managing dependencies.
+
+**Basic Commands:**
+
+1. Create a virtual environment:
+```bash
+python -m venv venv_name
+```
+2. Activate the virtual environment:
+
+    1. Windows:
+    ```bash
+    venv_name\Scripts\activate
+    ```
+    2. Mac/Linux:
+    ```bash
+    source venv_name/bin/activate
+    ```
+3. Install packages:
+```bash
+pip install package_name
+```
+4. Deactivate the environment:
+```bash
+deactivate
+```
+### Exercise
+1. Set Up a Virtual Environment:
+
+Create a virtual environment named dataops_env in your project folder.
+
+2. Activate the Environment:
+
+Use the appropriate command for your operating system.
+
+3. Install Dependencies:
+
+- Install `PyYAML` and `requests` libraries in the virtual environment using pip.
+- Freeze the installed dependencies into a requirements.txt file:
+```bash
+pip freeze > requirements.txt
+```
+4. Write a Script:
+
+- Create a Python script (test_env.py) to verify the environment setup.
+    
+    - The script should import yaml and requests and print a success message:
+```python
+import yaml
+import requests
+
+print("Virtual environment and dependencies are set up successfully!")
+```
