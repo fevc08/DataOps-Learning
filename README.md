@@ -226,3 +226,80 @@ import requests
 
 print("Virtual environment and dependencies are set up successfully!")
 ```
+## Day 5: Scripting with File I/O and Automation
+### Theory
+File I/O (Input/Output) and automation are essential for DataOps. Automating repetitive tasks like file reading, data parsing, or log generation increases efficiency and reduces human error.
+
+**Key Concepts:**
+
+1. File Handling in Python:
+
+- Reading: Read data from files (open, read, readlines).
+- Writing: Write or append data to files (write, writelines).
+Automating Tasks:
+
+2. Combine logic to perform recurring tasks (e.g., log backups).
+3. Use scheduling tools like `cron` (Linux) or `Task Scheduler` (Windows) for time-based automation.
+
+Working with Directories:
+
+Use the os and shutil libraries for directory management.
+```python
+import os
+os.mkdir('new_folder')  # Create a directory
+os.listdir()            # List directory contents
+```
+### Exercise
+1. Scenario:
+You’re tasked with automating log processing for a system. Your goal is to:
+
+    - Create a script to generate a sample log file.
+    - Read and process the log file.
+    - Save processed results into a new file.
+
+2. Step-by-Step Tasks:
+
+    Generate Logs:
+    Write a script to create a sample log file (system.log) with 10 lines of dummy data.
+    Example log line:
+
+    ```arduino
+    2024-11-22 14:30:45 INFO: Task completed successfully
+    ```
+    Process Logs:
+    - Read the log file and filter lines containing a specific keyword, e.g., `ERROR`. Save the filtered results to `error_logs.txt`.
+
+    Script Structure:
+    - Create a Python script (log_processor.py) that includes:
+
+        -Log generation.
+        -Reading and filtering.
+        -Writing filtered logs.
+
+**Bonus Task:**
+
+- Add a timestamp to the error_logs.txt filename, e.g., error_logs_20241122.txt. Use the datetime library for this.
+
+**Hints**
+
+To write logs to a file:
+
+```python
+with open('system.log', 'w') as file:
+    for i in range(10):
+        file.write(f"2024-11-22 14:30:45 INFO: Line {i+1}\n")
+```
+To filter logs:
+
+```python
+with open('system.log', 'r') as file:
+    lines = file.readlines()
+filtered = [line for line in lines if 'ERROR' in line]
+```
+To add a timestamp:
+
+```python
+from datetime import datetime
+timestamp = datetime.now().strftime('%Y%m%d')
+filename = f"error_logs_{timestamp}.txt"
+```
