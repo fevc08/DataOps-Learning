@@ -382,3 +382,99 @@ except FileNotFoundError:
 - Python script: Implements data processing and validation.
 - cleaned_data.csv: The cleaned output file.
 Once you're done, share your updated repository link, and I'll review your work!
+
+## Day 7: Data Validation
+### **Topic Explanation:**
+#### *Pydantic for Schema Validation*
+Pydantic is a Python library used for data validation and parsing. It enforces type checks and ensures that data matches a defined schema. This is particularly useful when working with data pipelines to prevent invalid data from propagating through the system.
+
+**Key Features:**
+
+- *Schema Definition:* Define a data model with constraints (e.g., types, value ranges).
+- *Validation:* Automatically checks if the data conforms to the model.
+- *Error Handling:* Provides detailed error messages for invalid data.
+
+**Example Use Case:**
+
+Imagine validating rows of a CSV file to ensure:
+
+- The name is a string.
+- The email is properly formatted.
+- The age is an integer within a specific range.
+
+### Exercise: Data Validation with Pydantic
+
+**Step-by-Step Instructions**
+1. Install Pydantic:
+
+```bash
+pip install pydantic
+```
+2. Define a schema for the data:
+
+- `name`: Non-empty string.
+- `email`: Valid email format.
+- `age`: Integer between 18 and 60.
+
+**Write a Python script to:**
+
+- Read a CSV file (`data.csv`).
+- Validate each row against the schema using Pydantic.
+- Save valid rows to `validated_data.csv`.
+
+**Starter Code**
+```python
+from pydantic import BaseModel, EmailStr, ValidationError
+import csv
+
+# Define the Pydantic model
+class UserData(BaseModel):
+    name: str
+    email: EmailStr
+    age: int
+
+    @classmethod
+    def validate_row(cls, row):
+        """Custom method to validate a row."""
+        try:
+            validated_data = cls(
+                name=row['name'].strip(),
+                email=row['email'].strip(),
+                age=int(row['age'].strip())
+            )
+            return validated_data
+        except (ValidationError, ValueError) as e:
+            print(f"Validation error for row {row}: {e}")
+            return None
+
+# File paths
+input_file = 'data.csv'
+output_file = 'validated_data.csv'
+
+# Read and validate data
+valid_rows = []
+try:
+    with open(input_file, 'r') as infile:
+        reader = csv.DictReader(infile)
+        for row in reader:
+            validated_row = UserData.validate_row(row)
+            if validated_row:
+                valid_rows.append(validated_row.dict())
+except FileNotFoundError:
+    print(f"Input file '{input_file}' not found.")
+
+# Write validated data to a new file
+if valid_rows:
+    with open(output_file, 'w', newline='') as outfile:
+        fieldnames = ['name', 'email', 'age']
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(valid_rows)
+    print(f"Validated data saved to {output_file}")
+else:
+    print("No valid data to save.")
+```
+**Deliverables**
+- Input file: data.csv with test data to validate.
+- Python script: Implements schema validation with Pydantic.
+- Output file: validated_data.csv containing valid rows.
