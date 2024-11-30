@@ -303,3 +303,82 @@ from datetime import datetime
 timestamp = datetime.now().strftime('%Y%m%d')
 filename = f"error_logs_{timestamp}.txt"
 ```
+Day 6: Basic Data Processing and Validation
+Topic Explanation: Basic Data Processing and Validation
+Data processing is a key part of DataOps. It involves cleaning, transforming, and validating raw data to make it usable. Validation ensures data integrity by checking that data adheres to defined rules or schema.
+
+Today, we will:
+
+- Process structured data (CSV format).
+- Clean and validate data:
+    - Remove empty rows.
+    - Validate specific fields (e.g., email format, numeric ranges).
+- Save cleaned data back to a file.
+
+**Step-by-Step Guide**
+
+Understand the Input File
+
+We'll use a sample CSV file with the following structure:
+
+```graphql
+name,email,age
+Alice,alice@example.com,30
+Bob,bob[at]example.com,25
+Charlie,,22
+,jane@example.com,28
+```
+Tasks:
+
+Load the CSV file.
+Remove rows with missing data.
+Ensure email format is valid (contains @).
+Ensure age is within a specific range (e.g., 18–60).
+Output:
+A cleaned CSV file:
+
+```graphql
+name,email,age
+Alice,alice@example.com,30
+Bob,bob@example.com,25
+```
+Exercise
+1. Create a sample CSV file named data.csv with the above data.
+2. Write a Python script to:
+    - Load the file and display its content.
+    - Clean the data based on the rules.
+    - Save the cleaned data into a new file named cleaned_data.csv.
+
+**Starter Code**
+
+Here’s a hint to get you started:
+
+```python
+import csv
+
+# Load and process the CSV file
+try:
+    with open('data.csv', 'r') as infile:
+        reader = csv.DictReader(infile)
+        rows = list(reader)
+        print("Original Data:")
+        for row in rows:
+            print(row)
+    
+    # Cleaning and validation logic here
+    
+    with open('cleaned_data.csv', 'w', newline='') as outfile:
+        fieldnames = ['name', 'email', 'age']
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+        writer.writeheader()
+        
+        # Write cleaned rows here
+
+except FileNotFoundError:
+    print("Input file 'data.csv' not found.")
+```
+**Deliverables**
+- data.csv: The input file.
+- Python script: Implements data processing and validation.
+- cleaned_data.csv: The cleaned output file.
+Once you're done, share your updated repository link, and I'll review your work!
