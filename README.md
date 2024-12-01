@@ -478,3 +478,47 @@ else:
 - Input file: data.csv with test data to validate.
 - Python script: Implements schema validation with Pydantic.
 - Output file: validated_data.csv containing valid rows.
+
+## Day 8: ETL Pipelines
+### Topic: Basics of ETL Processes
+ETL (Extract, Transform, Load) is a common process in data engineering and DataOps. Here’s a breakdown:
+
+1. **Extract:** Collect data from various sources (e.g., CSV files, APIs, databases).
+2. **Transform:** Clean, validate, and prepare the data for analysis (e.g., handle missing values, normalize formats).
+3. **Load:** Save the processed data into a storage solution (e.g., database, file).
+
+### Step-by-Step Explanation
+We'll build a simple ETL pipeline in Python using a CSV file as the data source. Here's what the pipeline will do:
+
+1. **Extract:** Read raw data from raw_data.csv.
+2. **Transform:**
+    - Remove rows with missing or invalid data.
+    - Format fields (e.g., trimming whitespace, standardizing date formats).
+    - Add a calculated column (e.g., full name from first and last names).
+3. **Load:** Save the cleaned and enriched data into a new file processed_data.csv.
+
+### Your Task
+1. **Setup:** Ensure you have raw_data.csv in the project directory. If not, create one with the following sample content:
+
+```csv
+first_name,last_name,email,date_of_birth
+John,Doe,john.doe[at]example.com,1990-05-20
+Jane,,jane[at]example.com,
+,Smith,smith[at]example.com,2000-10-10
+Emily,Davis,emily.davis[at]example.com,1985-03-15
+```
+
+2. **Write an ETL Script:**
+
+    1. Read the data from raw_data.csv (Extract).
+    2. Perform the following transformations (Transform):
+        - Replace `[at]` with `@` in the email column.
+        - Remove rows with missing values.
+        - Combine `first_name` and `last_name` into a `full_name` column.
+    3. Save the transformed data into `processed_data.csv` (Load).
+    4. Validation: Print the final data to verify the transformations.
+
+### Deliverable
+A Python script (etl_pipeline.py) that:
+- Implements the ETL pipeline as described.
+- Saves the transformed data to processed_data.csv.
