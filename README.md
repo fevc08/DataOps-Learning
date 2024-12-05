@@ -522,3 +522,58 @@ Emily,Davis,emily.davis[at]example.com,1985-03-15
 A Python script (etl_pipeline.py) that:
 - Implements the ETL pipeline as described.
 - Saves the transformed data to processed_data.csv.
+
+## Day 9: Database Basics
+**Goal:** Learn how to connect to a local SQLite database, perform basic CRUD (Create, Read, Update, Delete) operations, and manage database data effectively.
+
+### Step 1: Explanation
+
+1. **SQLite Basics:**
+
+SQLite is a lightweight, file-based database commonly used for small-scale applications or development.
+It doesn’t require a server, making it easy to set up and use.
+
+2. **CRUD Operations:**
+
+- **Create:** Insert data into tables.
+- **Read:** Query data from tables.
+- **Update:** Modify existing data.
+- **Delete:** Remove data from tables.
+
+Python provides an inbuilt library, `sqlite3`, to interact with SQLite databases.
+
+### Step 2: Task
+**Setup:**
+
+1. Create a database file (e.g., `dataops.db`) and a table (users) with the following columns:
+
+    - `id` (integer, primary key)
+    - `name` (text)
+    - `email` (text, unique)
+    - `age` (integer)
+
+2. Implement a Python script to:
+
+Connect to the SQLite database.
+Create the users table if it doesn’t exist.
+Perform the following operations:
+Insert multiple rows of sample data.
+Read and display all data.
+Update the email of a specific user.
+Delete users based on a condition (e.g., age > 60).
+
+### Step 3: Deliverable
+A Python script named database_operations.py that:
+
+1. Creates or connects to `dataops.db`.
+2. Creates the users table if it doesn’t exist.
+3. Performs the above CRUD operations.
+4. Outputs clear messages or data after each operation.
+
+### Step 4: Example Schema
+Here’s an example structure for your users table:
+
+|id|name|email|age|
+|---|---|---|---| 
+|1|John Doe|john@example.com|30|
+|2|Jane Doe|jane_doe@example.com|45|
