@@ -1,0 +1,202 @@
+2024-12-08 12:52:40,779 - INFO - Data extraction successful.
+2024-12-08 12:52:40,781 - INFO - Dropped 0 duplicate rows
+2024-12-08 12:52:40,786 - INFO - Identified date columns: ['hire_date']
+2024-12-08 12:52:40,788 - INFO - Dropped 1 rows with missing dates
+2024-12-08 12:52:40,790 - WARNING - Could not convert column hire_date to datetime: time data "2020/03/15" doesn't match format "%Y-%m-%d", at position 0. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2024-12-08 12:52:40,791 - INFO - Date columns converted successfully
+2024-12-08 12:52:40,791 - INFO - Columns with numeric values categorized successfully
+2024-12-08 12:52:40,792 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 12:52:40,794 - INFO - Dropped 5 rows with missing categorical values
+2024-12-08 12:52:40,794 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 12:52:40,795 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 12:52:40,795 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 12:52:40,796 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 12:52:40,797 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 12:52:40,797 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 12:52:40,800 - INFO - Data loading successful.
+2024-12-08 13:21:38,301 - INFO - Data extraction successful.
+2024-12-08 13:21:38,303 - INFO - Dropped 0 duplicate rows
+2024-12-08 13:21:38,309 - INFO - Identified date columns: ['hire_date']
+2024-12-08 13:21:38,466 - INFO - Date columns converted successfully
+2024-12-08 13:21:38,467 - INFO - Columns with numeric values categorized successfully
+2024-12-08 13:21:38,502 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 13:21:38,509 - INFO - Dropped 5 rows with missing categorical values
+2024-12-08 13:21:38,512 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:21:38,513 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:21:38,515 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:21:38,516 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:21:38,516 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:21:38,592 - INFO - Data loading successful.
+2024-12-08 13:35:50,042 - INFO - Data extraction successful.
+2024-12-08 13:35:50,043 - INFO - Dropped 0 duplicate rows
+2024-12-08 13:35:50,049 - INFO - Identified date columns: ['hire_date']
+2024-12-08 13:35:50,116 - INFO - Date columns converted successfully
+2024-12-08 13:35:50,117 - INFO - Columns with numeric values categorized successfully
+2024-12-08 13:35:50,118 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 13:35:50,123 - INFO - Dropped 5 rows with missing categorical values
+2024-12-08 13:35:50,124 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:35:50,125 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:35:50,126 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:35:50,127 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:35:50,128 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:35:50,133 - INFO - Data loading successful.
+2024-12-08 13:36:49,830 - INFO - Data extraction successful.
+2024-12-08 13:36:49,831 - INFO - Dropped 0 duplicate rows
+2024-12-08 13:36:49,839 - INFO - Identified date columns: ['hire_date']
+2024-12-08 13:36:49,843 - INFO - Date columns converted successfully
+2024-12-08 13:36:49,843 - INFO - Columns with numeric values categorized successfully
+2024-12-08 13:36:49,844 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 13:36:49,847 - INFO - Dropped 5 rows with missing categorical values
+2024-12-08 13:36:49,848 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:36:49,849 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:36:49,850 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:36:49,851 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:36:49,851 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:36:49,856 - INFO - Data loading successful.
+2024-12-08 13:40:11,529 - INFO - Data extraction successful.
+2024-12-08 13:40:11,530 - INFO - Dropped 0 duplicate rows
+2024-12-08 13:40:11,535 - INFO - Identified date columns: ['hire_date']
+2024-12-08 13:40:11,558 - INFO - Date columns converted successfully
+2024-12-08 13:40:11,559 - INFO - Columns with numeric values categorized successfully
+2024-12-08 13:40:11,560 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 13:40:11,563 - INFO - Dropped 5 rows with missing categorical values
+2024-12-08 13:40:11,564 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:40:11,564 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:40:11,565 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:40:11,566 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:40:11,566 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:40:11,571 - INFO - Data loading successful.
+2024-12-08 13:48:23,004 - INFO - Data extraction successful.
+2024-12-08 13:48:23,005 - INFO - Dropped 0 duplicate rows
+2024-12-08 13:48:23,011 - INFO - Identified date columns: ['hire_date']
+2024-12-08 13:48:23,013 - INFO - Date columns converted successfully
+2024-12-08 13:48:23,014 - INFO - Columns with numeric values categorized successfully
+2024-12-08 13:48:23,015 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 13:48:23,017 - INFO - Dropped 5 rows with missing categorical values
+2024-12-08 13:48:23,017 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:48:23,018 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:48:23,019 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:48:23,019 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:48:23,020 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:48:23,023 - INFO - Data loading successful.
+2024-12-08 13:49:27,504 - INFO - Data extraction successful.
+2024-12-08 13:49:27,506 - INFO - Dropped 0 duplicate rows
+2024-12-08 13:49:27,512 - INFO - Identified date columns: ['hire_date']
+2024-12-08 13:49:27,515 - INFO - Date columns converted successfully
+2024-12-08 13:49:27,515 - INFO - Columns with numeric values categorized successfully
+2024-12-08 13:49:27,516 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 13:49:27,518 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:49:27,518 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:49:27,519 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:49:27,520 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:49:27,520 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:49:27,524 - INFO - Data loading successful.
+2024-12-08 13:50:22,121 - INFO - Data extraction successful.
+2024-12-08 13:50:22,123 - INFO - Dropped 0 duplicate rows
+2024-12-08 13:50:22,130 - INFO - Identified date columns: ['hire_date']
+2024-12-08 13:50:22,133 - INFO - Date columns converted successfully
+2024-12-08 13:50:22,133 - INFO - Columns with numeric values categorized successfully
+2024-12-08 13:50:22,134 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 13:50:22,135 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:50:22,135 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:50:22,136 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:50:22,136 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:50:22,137 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:50:22,142 - INFO - Data loading successful.
+2024-12-08 13:50:45,576 - INFO - Data extraction successful.
+2024-12-08 13:50:45,577 - INFO - Dropped 0 duplicate rows
+2024-12-08 13:50:45,582 - INFO - Identified date columns: ['hire_date']
+2024-12-08 13:50:45,585 - INFO - Date columns converted successfully
+2024-12-08 13:50:45,586 - INFO - Columns with numeric values categorized successfully
+2024-12-08 13:50:45,586 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 13:50:45,587 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:50:45,588 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:50:45,588 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:50:45,589 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:50:45,589 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:50:45,593 - INFO - Data loading successful.
+2024-12-08 13:52:01,674 - INFO - Data extraction successful.
+2024-12-08 13:52:01,675 - INFO - Dropped 0 duplicate rows
+2024-12-08 13:52:01,680 - INFO - Identified date columns: ['hire_date']
+2024-12-08 13:52:01,685 - INFO - Date columns converted successfully
+2024-12-08 13:52:01,686 - INFO - Columns with numeric values categorized successfully
+2024-12-08 13:52:01,687 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 13:52:01,733 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 13:52:01,745 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:52:01,746 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:52:01,747 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:52:01,748 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 13:52:01,753 - INFO - Data loading successful.
+2024-12-08 14:13:08,578 - INFO - Data extraction successful.
+2024-12-08 14:13:08,600 - INFO - Dropped 0 duplicate rows
+2024-12-08 14:13:08,610 - INFO - Identified date columns: ['hire_date']
+2024-12-08 14:13:08,629 - INFO - Filled 3 missing dates in column hire_date.
+2024-12-08 14:13:08,629 - INFO - Date columns converted successfully
+2024-12-08 14:13:08,630 - INFO - Columns with numeric values categorized successfully
+2024-12-08 14:13:08,632 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 14:13:08,633 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 14:13:08,635 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:13:08,637 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:13:08,637 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:13:08,638 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:13:08,645 - INFO - Data loading successful.
+2024-12-08 14:13:25,888 - ERROR - Error during extraction
+Traceback (most recent call last):
+  File "C:\Users\fevc_\DataOps-Learning\modular_etl.py", line 15, in extract_data
+    data = pd.read_csv(input_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fevc_\DataOps-Learning\dataops_env\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fevc_\DataOps-Learning\dataops_env\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fevc_\DataOps-Learning\dataops_env\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fevc_\DataOps-Learning\dataops_env\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "C:\Users\fevc_\DataOps-Learning\dataops_env\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'iput.csv'
+2024-12-08 14:13:48,392 - INFO - Data extraction successful.
+2024-12-08 14:13:48,394 - INFO - Dropped 0 duplicate rows
+2024-12-08 14:13:48,401 - INFO - Identified date columns: ['hire_date']
+2024-12-08 14:13:48,404 - INFO - Filled 3 missing dates in column hire_date.
+2024-12-08 14:13:48,405 - INFO - Date columns converted successfully
+2024-12-08 14:13:48,405 - INFO - Columns with numeric values categorized successfully
+2024-12-08 14:13:48,406 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 14:13:48,406 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 14:13:48,407 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:13:48,408 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:13:48,408 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:13:48,409 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:13:48,414 - INFO - Data loading successful.
+2024-12-08 14:38:41,041 - INFO - Data extraction successful.
+2024-12-08 14:38:41,042 - INFO - Removed duplicate rows.
+2024-12-08 14:38:41,096 - INFO - Filled missing dates in first_name.
+2024-12-08 14:38:41,099 - INFO - Filled missing dates in last_name.
+2024-12-08 14:38:41,101 - INFO - Filled missing dates in department.
+2024-12-08 14:38:41,115 - INFO - Filled missing dates in hire_date.
+2024-12-08 14:38:41,117 - INFO - Filled missing dates in email.
+2024-12-08 14:38:41,121 - INFO - Filled missing numeric values in employee_id.
+2024-12-08 14:38:41,122 - INFO - Filled missing numeric values in salary.
+2024-12-08 14:38:41,133 - INFO - Data loading successful.
+2024-12-08 14:51:34,847 - INFO - Data extraction successful.
+2024-12-08 14:51:34,848 - INFO - Dropped 0 duplicate rows
+2024-12-08 14:51:34,853 - INFO - Identified date columns: ['hire_date']
+2024-12-08 14:51:34,856 - INFO - Filled 3 missing dates in column hire_date.
+2024-12-08 14:51:34,856 - INFO - Date columns converted successfully
+2024-12-08 14:51:34,856 - INFO - Columns with numeric values categorized successfully
+2024-12-08 14:51:34,857 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 14:51:34,858 - INFO - Numeric columns with missing values filled with mean values successfully
+2024-12-08 14:51:34,859 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:51:34,859 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:51:34,860 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:51:34,860 - INFO - Categorical columns converted to uppercase successfully
+2024-12-08 14:51:34,864 - INFO - Data loading successful.

@@ -1,0 +1,11 @@
+employee_id,first_name,last_name,department,salary,hire_date,email
+201,John,Smith,Sales,65000,2020/03/15,john.smith@company
+202,Emily,,Marketing,72500.50,2019-06-22,emily.johnson@company.com
+203,Michael,Williams,Unknown,85000.75,18-11-10,michael.williams@company.com
+204,Sarah,Brown,Human Resources,,2021-01-05,sarah.brown@company.com
+205,David,Miller,Finance,,2017-09-18,david.miller@company.com
+206,,Garcia,IT,82500.50,2020-07-30,robert.garcia@company.com
+207,Robert,,Operations,69500.75,2019-04-12,@company.com
+208,Lisa,Martinez,Customer Support,61000.00,2021-05-20,lisa.martinez@invalid
+209,William,Anderson,,87000.25,2018-02-28,william.anderson@company.com
+210,Jessica,Taylor,Product Management,75500.50,,jessica.taylor@company.com

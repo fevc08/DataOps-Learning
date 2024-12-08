@@ -1,5 +1,7 @@
-database:
-  host: localhost
-  port: 5432
-  username: admin
-  password: secret
+input_path: "input.csv"
+output_path: "output.csv"
+log_file: "modular_etl_metrics.log"
+transformations:
+  fill_missing_numeric_with_mean: true
+  text_to_uppercase: true
+  fill_missing_dates: true
